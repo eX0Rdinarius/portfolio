@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -223,38 +222,12 @@
         .skill-card h3 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
+            color: inherit;
         }
 
         .skill-card p {
             font-size: 0.9rem;
             color: var(--gray);
-        }
-
-        .progress-container {
-            margin-top: 2rem;
-        }
-
-        .progress-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .progress-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background-color: var(--dark);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            border-radius: 4px;
-            background: linear-gradient(to right, var(--primary), var(--accent));
         }
 
         .projects {
@@ -383,6 +356,7 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: inherit;
         }
 
         .cert-badge i {
@@ -407,6 +381,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
+            color: inherit;
         }
 
         .form-group input,
@@ -461,29 +436,6 @@
             font-size: 0.9rem;
         }
 
-        /* Dark mode toggle */
-        .theme-toggle {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
-            background-color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
-            z-index: 100;
-        }
-
-        .theme-toggle i {
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -517,7 +469,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -543,8 +494,7 @@
         <div class="container">
             <span class="tagline">Full Stack Developer & Security Specialist</span>
             <h2>Crafting Digital Experiences</h2>
-            <p>Building secure, scalable, and innovative solutions with cutting-edge technologies. Specializing in web
-                development, machine learning, and cybersecurity.</p>
+            <p>Building secure, scalable, and innovative solutions with cutting-edge technologies. Specializing in web development, machine learning, and cybersecurity.</p>
             <a href="#projects" class="btn">View My Work</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
@@ -617,17 +567,13 @@
                     </div>
                     <div class="project-content">
                         <h3>Restaurants and Delivery System</h3>
-                        <p>A full-featured web application designed to streamline the restaurant ordering and delivery
-                            experience. Built with scalability and user experience in mind, this project demonstrates a
-                            complete ecosystem for online food services—from restaurant management to end-user delivery
-                            tracking.</p>
+                        <p>A full-featured web application designed to streamline the restaurant ordering and delivery experience.</p>
                         <div class="project-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">JavaScript</span>
                             <span class="project-tag">MySQL</span>
                             <span class="project-tag">Security</span>
                         </div>
-
                     </div>
                 </div>
 
@@ -637,17 +583,13 @@
                     </div>
                     <div class="project-content">
                         <h3>Hotels Booking Platform</h3>
-                        <p>A full-stack hotel booking application with robust security features and an individualized
-                            embedded management system. This platform allows users to search, filter, and book hotels
-                            based on location, price, availability, and amenities—while providing hotel owners with a
-                            dedicated dashboard to manage their listings, bookings, and customer interactions.</p>
+                        <p>A full-stack hotel booking application with robust security features and management system.</p>
                         <div class="project-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">JavaScript</span>
                             <span class="project-tag">MySQL</span>
                             <span class="project-tag">Security</span>
                         </div>
-
                     </div>
                 </div>
 
@@ -657,16 +599,12 @@
                     </div>
                     <div class="project-content">
                         <h3>Basic Encryption and Decryption Tools</h3>
-                        <p>A lightweight Python-based toolkit for encrypting and decrypting text using multiple
-                            classical and modern cryptographic techniques. This project serves as a foundational
-                            exploration of data security and privacy, demonstrating how to protect sensitive information
-                            with basic cryptographic principles.</p>
+                        <p>A lightweight Python-based toolkit for encrypting and decrypting text.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Cybersecurity</span>
                             <span class="project-tag">Cryptography</span>
                         </div>
-
                     </div>
                 </div>
                 <div class="project-card">
@@ -677,11 +615,8 @@
                         <h3>Graphics</h3>
                         <p>Visit the Google Drive for more Details</p>
                         <div class="project-tags">
-                            <span class="project-tag"><a style="color: #55efc4; text-decoration: none;"
-                                    href="https://drive.google.com/drive/folders/1UWm8kZgs-lOUtZ0t-y2lxx56q5Sw0xu1?usp=drive_link">Go
-                                    To Drive</a></span>
+                            <span class="project-tag"><a style="color: #55efc4; text-decoration: none;" href="https://drive.google.com/drive/folders/1UWm8kZgs-lOUtZ0t-y2lxx56q5Sw0xu1?usp=drive_link">Go To Drive</a></span>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -696,24 +631,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Developer. Designer. Security Specialist.</h3>
-                    <p>I'm Usman Abubakar Usman, known online as Exordinarius, a 500L Medical Student, and a passionate
-                        full-stack developer with expertise in web technologies, machine learning, and cybersecurity.
-                        With a background in network security certified by ICSI (UK), I bring a security-first approach
-                        to all my development projects.</p>
-                    <p>My journey in tech began with graphic design, which evolved into web development and eventually
-                        expanded to include software development, machine learning, and malware analysis. I'm constantly
-                        learning and exploring new technologies to build innovative solutions.</p>
-                    <p>Currently, I'm focused on advancing my skills in Python machine learning applications and malware
-                        analysis techniques while working on various software development projects.</p>
-
+                    <p>I'm Usman Abubakar Usman, known online as Exordinarius, a 500L Medical Student, and a passionate full-stack developer.</p>
+                    <p>My journey in tech began with graphic design, which evolved into web development and eventually expanded to include software development.</p>
+                    <p>Currently, I'm focused on advancing my skills in Python machine learning applications and malware analysis techniques.</p>
                     <div style="margin-top: 2rem;">
                         <span class="cert-badge"><i class="fas fa-certificate"></i> Medical Student</span>
-                        <span class="cert-badge"><i class="fas fa-certificate"></i> Certified Network Security
-                            Specialist</span>
+                        <span class="cert-badge"><i class="fas fa-certificate"></i> Certified Network Security Specialist</span>
                         <span class="cert-badge"><i class="fas fa-certificate"></i> ICSI | UK Certified</span>
                         <span class="cert-badge"><i class="fas fa-certificate"></i> Graphic Design Professional</span>
-                        <span class="cert-badge"><i class="fas fa-certificate"></i> Ethical Hacker & Penetration
-                            Tester</span>
+                        <span class="cert-badge"><i class="fas fa-certificate"></i> Ethical Hacker & Penetration Tester</span>
                     </div>
                 </div>
                 <div class="about-img">
@@ -765,43 +691,8 @@
         </div>
     </footer>
 
-    <div class="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </div>
 
     <script>
-        // Simple theme toggle functionality
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-        const moonIcon = themeToggle.querySelector('i');
-
-        // Check for saved theme preference or use preferred color scheme
-        const currentTheme = localStorage.getItem('theme') ||
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-        if (currentTheme === 'light') {
-            body.style.backgroundColor = '#f5f6fa';
-            body.style.color = '#1e272e';
-            moonIcon.className = 'fas fa-sun';
-        }
-
-        themeToggle.addEventListener('click', () => {
-            if (body.style.backgroundColor === 'rgb(245, 246, 250)') {
-                // Switch to dark mode
-                body.style.backgroundColor = '';
-                body.style.color = '';
-                moonIcon.className = 'fas fa-moon';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                // Switch to light mode
-                body.style.backgroundColor = '#f5f6fa';
-                body.style.color = '#1e272e';
-                moonIcon.className = 'fas fa-sun';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -827,8 +718,6 @@
                 alert('Error sending message. Please try again.');
             }
         });
-
     </script>
 </body>
-
 </html>
