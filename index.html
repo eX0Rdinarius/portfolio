@@ -376,6 +376,79 @@
             color: var(--gray);
             font-size: 0.8rem;
         }
+        #in-development {
+            padding: 3rem 0;
+        }
+        
+        .full-width-project {
+            background-color: var(--dark);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .full-width-project .project-img {
+            height: 300px;
+            width: 100%;
+        }
+        
+        .full-width-project .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .full-width-project .project-content {
+            padding: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .feature-item i {
+            color: var(--accent);
+        }
+        
+        .project-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .full-width-project {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .full-width-project .project-img {
+                height: auto;
+            }
+            
+            .project-footer {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .progress-container {
+                min-width: 300px;
+            }
+        }
 
         @media (min-width: 768px) {
             .header-content {
@@ -603,6 +676,63 @@
         </div>
     </section>
 
+    <section id="in-development">
+        <div class="container">
+            <div class="section-title">
+                <h2>In Development</h2>
+            </div>
+            <div class="full-width-project">
+                <div class="project-img">
+                    <img src="images/hybrid.avif" alt="Hybrid Services Platform">
+                </div>
+                <div class="project-content">
+                    <div class="development-badge">
+                        <i class="fas fa-code-branch"></i> Active Development
+                    </div>
+                    <h3>All-in-One Services Platform</h3>
+                    <p>A comprehensive hybrid platform integrating multiple local services including hotels, restaurants, auto repair (vulcanizers), traders, pharmacies, and more. This unified system will allow clients to access all these services through a single online interface.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unified booking system</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Service provider management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time availability</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integrated payments</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Review system</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-vendor support</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
         <div class="container">
             <div class="section-title">
