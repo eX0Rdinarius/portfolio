@@ -123,7 +123,7 @@
             padding: 0.5rem 1rem;
             background-color: rgba(108, 92, 231, 0.2);
             border-radius: 20px;
-            color: var(--primary);
+            color: #d2cfff;
             font-weight: 600;
             margin-bottom: 1.5rem;
             font-size: 0.9rem;
@@ -189,7 +189,7 @@
             background-color: var(--dark);
             padding: 1.5rem;
             border-radius: 8px;
-            width: 150px;
+            width: 200px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
@@ -288,6 +288,10 @@
             height: auto;
             display: block;
         }
+        .about-text {
+            display: grid;
+            align-self: center;
+        }
 
         .about-text h3 {
             font-size: 1.5rem;
@@ -297,7 +301,7 @@
 
         .about-text p {
             font-size: 0.95rem;
-            color: var(--gray);
+            color: #d2cfff;
             margin-bottom: 1.2rem;
         }
 
@@ -434,6 +438,34 @@
             gap: 1.5rem;
             margin-top: 1.5rem;
         }
+        .myname {
+            
+            color: var(--darker);
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            display: grid;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            font-weight: 900;
+            font-size: 130%;
+        }
+        .myname span {
+            color: white;
+        }
+        .badge {
+            display: grid;
+            justify-self: center;
+            background-color: var(--accent);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            border-radius: 15px;
+            color: #0f1519;
+        }
         
         @media (min-width: 768px) {
             .full-width-project {
@@ -534,7 +566,7 @@
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-code fa-2x" style="color: var(--primary);"></i>
-                    <h1>Usman Abubakar Usman <span class="nickname">"Exordinarius"</span></h1>
+                    <h1>Exordinarius</h1>
                 </div>
                 <nav>
                     <ul>
@@ -567,7 +599,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Developer. Designer. Security Specialist.</h3>
-                    <p>I'm Usman Abubakar Usman, known online as Exordinarius, a 500L Medical Student, and a passionate full-stack developer with expertise in web technologies, machine learning, and cybersecurity. With a background in network security, I bring a security-first approach to all my development projects.</p>
+                    <p>I'm Usman Abubakar Usman, also known as Exordinarius, a 500L Medical Student, and a passionate full-stack developer with expertise in web technologies, machine learning, and cybersecurity. With a background in network security, I bring a security-first approach to all my development projects.</p>
                     <p>My journey in tech began with cybersecurity and graphic design, which evolved into web development and eventually expanded to include software development, machine learning, and malware analysis. I'm constantly learning and exploring new technologies to build innovative solutions.</p>
                     <p>Currently, I'm focused on advancing my skills in Python machine learning applications and malware analysis techniques while working on various software development projects.</p>
                     
@@ -580,7 +612,10 @@
                     </div>
                 </div>
                 <div class="about-img">
-                    <img src="images/myprofile.jpg" alt="Usman Abubakar Usman">
+                    <img src="images/profile.png" alt="Usman Abubakar Usman">
+                    <p class="myname"><span>Usman A. Usman</span></p>
+                    <span class="badge">Full Stack Developer | Security Specialist</span>
+
                 </div>
             </div>
         </div>
@@ -592,26 +627,6 @@
                 <h2>Technical Skills</h2>
             </div>
             <div class="skills">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic Markup</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive Design</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>ES6+, Frameworks</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
-                    <p>Backend Development</p>
-                </div>
                 <div class="skill-card">
                     <i class="fab fa-python"></i>
                     <h3>Python</h3>
@@ -634,9 +649,35 @@
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-paint-brush"></i>
-                    <h3>Graphic Design</h3>
-                    <p>UI/UX, Branding</p>
+                    <h3>Design</h3>
+                    <p>Graphic Design, Logo Design, Social Media Post</p>
                 </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic Markup</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive Design</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, Frameworks</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Backend Development</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                    <p>Backend Development</p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -790,7 +831,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" style="width: 100%; border-radius: 18px;">Send Message <i class="fa-regular fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
@@ -805,7 +846,7 @@
                 <a href="https://www.instagram.com/exordinarius?igsh=eWljcm1kcGxubHJ3"><i class="fab fa-instagram"></i></a>
                 <a href="https://tryhackme.com/p/eXORdinarius"><i class="fab fa-codepen"></i></a>
             </div>
-            <p class="copyright">© 2024 Usman Abubakar Usman (Exordinarius). All rights reserved.</p>
+            <p class="copyright">© 2025 Usman Abubakar Usman (Exordinarius). All rights reserved.</p>
         </div>
     </footer>
 
